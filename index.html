@@ -104,6 +104,7 @@
       font-size: 0.95rem;
       margin-bottom: 18px;
       opacity: 0.95;
+      white-space: pre-line; /* <-- Added so \n breaks line */
     }
 
     .controls {
@@ -290,7 +291,7 @@
 
     yesBtn.addEventListener("click", async () => {
       question.textContent = "YAYYY!! 💘 You made my day!";
-      subtext.textContent = "Officially the cutest Valentine ever 🌹\n (P.s. Marry me Natsuki chan|ω•๑`))";
+      subtext.textContent = "Officially the cutest Valentine ever 🌹\n(P.S. Marry me Natsuki chan |ω•๑`))";
       successMsg.textContent = "Happy Valentine’s Day, my Natsuki Chan 💞";
       yesBtn.style.display = "none";
       noBtn.style.display = "none";
@@ -361,4 +362,3 @@
   </script>
 </body>
 </html>
-
